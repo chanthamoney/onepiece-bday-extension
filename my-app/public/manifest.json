@@ -1,0 +1,18 @@
+{
+  "short_name": "One Piece Birthday Extension",
+  "name": "One Piece Birthday React Extension ",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "One Piece Birthdays",
+    "default_icon": {
+      "16": "strawhat_bday_icon.png",
+      "48": "strawhat_bday_icon.png"
+    }
+  },
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
