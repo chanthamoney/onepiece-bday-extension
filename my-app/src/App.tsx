@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { onePieceData } from "../src/data/one_piece_character_data";
 import { onePieceCharacterType } from "../src/types/types";
+import BirthdayCard from "./BirthdayCard";
 
 function App() {
   const date = new Date();
@@ -19,20 +20,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React shalini
-        </a>
-      </header>
+      <BirthdayCard character={birthdays[0]}></BirthdayCard>
     </div>
   );
 }
