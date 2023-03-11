@@ -1,9 +1,8 @@
-import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { onePieceData } from "../src/data/one_piece_character_data";
 import { onePieceCharacterType } from "../src/types/types";
 import BirthdayCard from "./BirthdayCard";
+import Carousel from "react-material-ui-carousel";
 
 function App() {
   const date = new Date();
@@ -20,7 +19,11 @@ function App() {
 
   return (
     <div className="App">
-      <BirthdayCard character={birthdays[0]}></BirthdayCard>
+      <Carousel navButtonsAlwaysVisible autoPlay={false} height={"500px"}>
+        {birthdays.map((birthday, i) => {
+          return <BirthdayCard character={birthday} key={i} />;
+        })}
+      </Carousel>
     </div>
   );
 }
