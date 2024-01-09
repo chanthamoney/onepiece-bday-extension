@@ -6,7 +6,7 @@ import Carousel from "react-material-ui-carousel";
 
 function App() {
   const date = new Date();
-  let day = date.getDate().toString();
+  let day = date.getDate();
   let month = date.getMonth() + 1;
   console.log(date);
 
@@ -15,13 +15,11 @@ function App() {
       charaObject.birth_month === month && charaObject.birth_day === day
   );
 
-  console.log("birthdays", birthdays);
-
   return (
     <div className="App">
       <Carousel navButtonsAlwaysVisible autoPlay={false} height={"500px"}>
         {birthdays.map((birthday, i) => {
-          return <BirthdayCard character={birthday} key={i} />;
+          return <BirthdayCard character={birthday} key={i}/>;
         })}
       </Carousel>
     </div>
