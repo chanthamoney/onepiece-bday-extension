@@ -21,4 +21,9 @@ If you added anything to this repo and want to see the changes you can
 - Go to chrome's extension page
 - Click on `Load unpacked` and select the `my-app` build folder. NOT the `one piece build` folder
 
+Thank you for checking out this project! 💯
+
+<img width="804" alt="image" src="https://github.com/chanthamoney/onepiece-bday-extension/assets/60955616/9082697e-95e3-437d-a722-57e12af52908">
+
+
 
